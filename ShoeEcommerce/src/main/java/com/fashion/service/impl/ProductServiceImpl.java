@@ -89,9 +89,9 @@ public class ProductServiceImpl implements ProductService {
 	
     public Product findById(Integer productId) throws ProductNotExistsException {
         Optional<Product> optionalProduct = productRepo.findById(productId);
-        if (optionalProduct.isEmpty()) {
-            throw new ProductNotExistsException("product id is invalid: " + productId);
-        }
+      ////  if (optionalProduct.isEmpty()) {
+           // throw new ProductNotExistsException("product id is invalid: " + productId);
+      //  }
         return optionalProduct.get();
     }
 	
