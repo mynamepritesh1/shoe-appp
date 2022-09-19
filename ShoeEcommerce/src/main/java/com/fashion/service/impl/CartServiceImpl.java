@@ -57,9 +57,9 @@ public class CartServiceImpl implements CartService {
 
         Optional<Cart> optionalCart = cartRepo.findById(cartItemId);
 
-        if (optionalCart.isEmpty()) {
-            throw new CustomException("cart item id is invalid: " + cartItemId);
-        }
+      //  if (optionalCart.isEmpty()) {
+          //  throw new CustomException("cart item id is invalid: " + cartItemId);
+       // }
 
         Cart cart = optionalCart.get();
 
